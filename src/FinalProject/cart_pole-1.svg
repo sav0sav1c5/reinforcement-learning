@@ -1,0 +1,62 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+  <!-- Track -->
+  <line x1="50" y1="300" x2="450" y2="300" stroke="#333" stroke-width="4"/>
+  <line x1="40" y1="295" x2="460" y2="295" stroke="#666" stroke-width="2"/>
+  
+  <!-- Cart -->
+  <rect x="200" y="260" width="100" height="40" fill="#4A90E2" stroke="#2C5282" stroke-width="2" rx="5"/>
+  
+  <!-- Cart wheels -->
+  <circle cx="220" cy="305" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+  <circle cx="280" cy="305" r="12" fill="#333" stroke="#000" stroke-width="2"/>
+  
+  <!-- Pole (rod) -->
+  <line x1="250" y1="260" x2="180" y2="120" stroke="#8B4513" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Pole mass (bob) -->
+  <circle cx="180" cy="120" r="15" fill="#E53E3E" stroke="#C53030" stroke-width="2"/>
+  
+  <!-- Pivot point -->
+  <circle cx="250" cy="260" r="6" fill="#2D3748" stroke="#1A202C" stroke-width="2"/>
+  
+  <!-- Force arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#E53E3E"/>
+    </marker>
+  </defs>
+  <line x1="320" y1="280" x2="380" y2="280" stroke="#E53E3E" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Angle arc -->
+  <path d="M 250 260 L 250 220 A 40 40 0 0 0 215 240" fill="none" stroke="#9F7AEA" stroke-width="2"/>
+  
+  <!-- Coordinate system -->
+  <line x1="80" y1="320" x2="120" y2="320" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="80" y1="320" x2="80" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="385" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#E53E3E">F</text>
+  <text x="125" y="335" font-family="Arial, sans-serif" font-size="12" fill="#000">x</text>
+  <text x="65" y="275" font-family="Arial, sans-serif" font-size="12" fill="#000">y</text>
+  <text x="255" y="285" font-family="Arial, sans-serif" font-size="12" fill="#000">M</text>
+  <text x="185" y="105" font-family="Arial, sans-serif" font-size="12" fill="#000">m</text>
+  <text x="220" y="195" font-family="Arial, sans-serif" font-size="12" fill="#9F7AEA">θ</text>
+  <text x="210" y="180" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">l</text>
+  
+  <!-- Position indicator -->
+  <line x1="250" y1="320" x2="250" y2="330" stroke="#666" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="245" y="345" font-family="Arial, sans-serif" font-size="10" fill="#666">x</text>
+  
+  <!-- Title -->
+  <text x="250" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2D3748">Cart-Pole System</text>
+  
+  <!-- Legend -->
+  <rect x="350" y="50" width="140" height="120" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1" rx="5"/>
+  <text x="360" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2D3748">Parameters:</text>
+  <text x="360" y="90" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">M - Cart mass</text>
+  <text x="360" y="105" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">m - Pole mass</text>
+  <text x="360" y="120" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">l - Pole length</text>
+  <text x="360" y="135" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">θ - Angle from vertical</text>
+  <text x="360" y="150" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">F - Applied force</text>
+  <text x="360" y="165" font-family="Arial, sans-serif" font-size="10" fill="#4A5568">x - Cart position</text>
+</svg>
